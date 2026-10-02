@@ -15,7 +15,7 @@ namespace Cosmosangle
 
         protected override void Run()
         {
-            while(true)
+            while (true)
             {
                 double d = 360.00;
                 double dd = 32.00;
@@ -24,23 +24,23 @@ namespace Cosmosangle
                 double d2 = d1 / dd;
                 string s = "";
                 string ss = "";
-                int i  = 0;
-            
-                Console.BackgroundColor=ConsoleColor.White;
-            
-                Console.ForegroundColor=ConsoleColor.Black;
+                int i = 0;
+
+                Console.BackgroundColor = ConsoleColor.White;
+
+                Console.ForegroundColor = ConsoleColor.Black;
                 Console.Clear();
                 var input = "";// Console.ReadLine();
-                for (i = 0; i < 17; i++) 
-                { 
-                  s= ((double)i * ddd).ToString();
+                for (i = 0; i < 17; i++)
+                {
+                    s = ((double)i * ddd).ToString("f5");
                     if (s.Length > 6)
                     {
-                        ss = s.Substring(0,6);
+                        ss = s.Substring(0, 6);
                         ss = ss + "                                                                                        ";
                         ss = ss.Substring(0, 16);
                     }
-                    else 
+                    else
                     {
 
                         ss = s;
@@ -48,10 +48,10 @@ namespace Cosmosangle
                         ss = ss.Substring(0, 16);
 
                     }
-                    s = (Math.Cos((double)i * d2)).ToString();
+                    s = (Math.Cos((double)i * d2)).ToString("f5");
                     if (s.Length > 6)
                     {
-                        s = s.Substring(0,6);
+                        s = s.Substring(0, 6);
                         s = s + "                                                                                        ";
                         s = s.Substring(0, 16);
                     }
@@ -62,8 +62,8 @@ namespace Cosmosangle
                         s = s.Substring(0, 16);
 
                     }
-                    ss = ss  + s;
-                    s = (Math.Sin((double)i * d2)).ToString();
+                    ss = ss + s;
+                    s = (Math.Sin((double)i * d2)).ToString("f5");
                     if (s.Length > 6)
                     {
                         s = s.Substring(0, 6);
@@ -84,7 +84,7 @@ namespace Cosmosangle
                 input = Console.ReadLine();
                 for (i = 16; i < 32; i++)
                 {
-                    s = ((double)i * ddd).ToString();
+                    s = ((double)i * ddd).ToString("f5");
                     if (s.Length > 6)
                     {
                         ss = s.Substring(0, 6);
@@ -99,7 +99,7 @@ namespace Cosmosangle
                         ss = ss.Substring(0, 16);
 
                     }
-                    s = (Math.Cos((double)i * d2)).ToString();
+                    s = (Math.Cos((double)i * d2)).ToString("f5");
                     if (s.Length > 6)
                     {
                         s = s.Substring(0, 6);
@@ -114,7 +114,7 @@ namespace Cosmosangle
 
                     }
                     ss = ss + s;
-                    s = (Math.Sin((double)i * d2)).ToString();
+                    s = (Math.Sin((double)i * d2)).ToString("f5");
                     if (s.Length > 6)
                     {
                         s = s.Substring(0, 6);
